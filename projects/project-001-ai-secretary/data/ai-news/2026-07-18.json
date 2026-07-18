@@ -1,0 +1,255 @@
+{
+  "collected_at": "2026-07-18T21:06:07.340620+09:00",
+  "total_items": 31,
+  "errors": [],
+  "items": [
+    {
+      "source": "ITmedia AI+",
+      "lang": "ja",
+      "title": "「Claude Fable 5」サブスクに統合 Max・Team Premiumプラン対象",
+      "url": "https://www.itmedia.co.jp/news/articles/2607/18/news019.html",
+      "published": "2026-07-18T12:50:00+09:00",
+      "summary": "米Anthropicは、最上位AIモデル「Claude Fable 5」を7月20日から有料プラン「Max」「Team Premium」の標準機能にする。利用上限の50%まで追加費用なしで利用でき、「Pro」「Team Standard」は「使用クレジット」での利用となり、100ドル分のクレジットを1回限り付与する。無償提供の期限を2度延長した末の方針転換となる。"
+    },
+    {
+      "source": "ITmedia AI+",
+      "lang": "ja",
+      "title": "「AIエージェントの約半数が\"戦力外\"になる」 なぜ企業は使いこなせない？",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2607/17/news053.html",
+      "published": "2026-07-17T13:00:00+09:00",
+      "summary": "Gartnerは、2027年までに企業の40％が自律型AIエージェントを格下げまたは廃止すると予測している。そうした悲観的な見方の背景にはどのような問題があるのか。"
+    },
+    {
+      "source": "ITmedia AI+",
+      "lang": "ja",
+      "title": "「スマホで動く」270億パラメーターLLM「Bonsai 27B」登場",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2607/17/2000000202/",
+      "published": "2026-07-17T10:59:41+09:00",
+      "summary": "27BクラスのモデルをiPhoneで実行可能な容量に収めたとしている。"
+    },
+    {
+      "source": "ITmedia AI+",
+      "lang": "ja",
+      "title": "Google、「NotebookLM」を「Gemini Notebook」に改称 Geminiエコシステムへの統合を強化",
+      "url": "https://www.itmedia.co.jp/news/articles/2607/17/news062.html",
+      "published": "2026-07-17T08:21:00+09:00",
+      "summary": "Googleは、AI搭載リサーチツール「NotebookLM」の名称を「Gemini Notebook」に変更すると発表した。機能は単体製品として維持しつつ、エコシステム全体で広く機能するようになる。安全なクラウドコンピュータの割り当てによるデータ分析機能などの大型アップデートも展開中で、この機能は今後全Proユーザーへ提供される見込みだ。"
+    },
+    {
+      "source": "ITmedia AI+",
+      "lang": "ja",
+      "title": "これからのロボットは「買ったときが一番性能低い」？ ソフトバンクと安川電機「フィジカルAI」学習工程の効率化を実証",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2607/17/2000000196/",
+      "published": "2026-07-17T08:00:00+09:00",
+      "summary": "「SoftBank World 2026」でソフトバンクと安川電機がフィジカルAI協業の成果を披露した。ソフトバンクの湧川隆次CTOは、強化学習によって使うほど性能が向上するロボットへの転換を「大きなパラダイムシフト」と表現した。"
+    },
+    {
+      "source": "ITmedia AI+",
+      "lang": "ja",
+      "title": "強気値上げで自爆か ClaudeやGeminiに押され「M365 Copilot」は一人負け？：888th Lap",
+      "url": "https://kn.itmedia.co.jp/kn/articles/2607/17/news040.html",
+      "published": "2026-07-17T07:00:00+09:00",
+      "summary": "「ChatGPT」だけでなく、「Claude」や「Gemini」も支持を広げる生成AI市場。だが、Microsoft 365の法人ユーザーは約4億5000万人いるものの、有料版「Microsoft 365 Copilot」を契約している割合は4.5％未満にとどまるという。"
+    },
+    {
+      "source": "ITmedia AI+",
+      "lang": "ja",
+      "title": "Google検索の「AIモード」、検索結果からそのままアプリで作業可能に CanvaやYouTube Musicなど",
+      "url": "https://www.itmedia.co.jp/news/articles/2607/17/news061.html",
+      "published": "2026-07-17T06:51:00+09:00",
+      "summary": "Googleは、検索の「AIモード」で外部アプリと直接連携できる機能の提供を開始した。まずは米国で順次展開し、Canva、YouTube Music、Instacartに対応する。検索結果から離れずにデザイン作成やカート追加などのタスクを完了できる。「Personal Intelligence」と組み合わせ、パーソナライズされた回答を提示する。"
+    },
+    {
+      "source": "ITmedia AI+",
+      "lang": "ja",
+      "title": "日本再起の旗印となるか、国産マルチモーダルAI基盤「FRONTia」が始動",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2607/17/news059.html",
+      "published": "2026-07-17T06:45:00+09:00",
+      "summary": "経済産業省とNEDOは、AIロボットやフィジカルAIに用いられる国産マルチモーダル基盤モデル「FRONTia（フロンティア）」の開発プロジェクトの本格始動に合わせて、東京都内で「我が国のフィジカルAI政策に関する対外発信イベント」を開催した。"
+    },
+    {
+      "source": "ASCII.jp AI",
+      "lang": "ja",
+      "title": "「穴が空くほど見てほしい」STU48復帰の甲斐心愛が2nd写真集を発売、キラ―カットも！",
+      "url": "https://ascii.jp/elem/000/004/419/4419995/?rss",
+      "published": "2026-07-18T19:00:00+09:00",
+      "summary": "STU48の1期生としてデビューを飾り、2024年6月からマレーシアのKLP48に移籍。今春からSTU48に復帰した甲斐心愛さんが、2nd写真集「おかえり太陽」の発売イベントを7月4日、秋葉原の書泉ブックタワーで開催した。"
+    },
+    {
+      "source": "ASCII.jp AI",
+      "lang": "ja",
+      "title": "海でも使える撮影ドローン！ 勝手に付いてくるモードがスゴイぞ",
+      "url": "https://ascii.jp/elem/000/004/420/4420115/?rss",
+      "published": "2026-07-18T18:00:00+09:00",
+      "summary": "100％防水の空飛ぶカメラ「HOVERAir AQUA」を実際に海へ持ち出して使い倒してきました！プロ並みの映像が撮れる自動追尾など、この夏に遊びたい最新ガジェットの魅力をレビューします。"
+    },
+    {
+      "source": "ASCII.jp AI",
+      "lang": "ja",
+      "title": "肉×ガーリックのやばみ！「ペッパーガーリックステーキワッパー」夏休みにガツンと食べたい",
+      "url": "https://ascii.jp/elem/000/004/420/4420291/?rss",
+      "published": "2026-07-18T17:00:00+09:00",
+      "summary": "バーガーキングは7月17日から、「ステーキワッパー」の新作「ペッパーガーリックステーキワッパー」を期間限定で発売中です。"
+    },
+    {
+      "source": "ASCII.jp AI",
+      "lang": "ja",
+      "title": "そこまでやる!? セブン「映画ちいかわ」コラボ、“島二郎”カレーに煮付まで",
+      "url": "https://ascii.jp/elem/000/004/420/4420284/?rss",
+      "published": "2026-07-18T16:15:00+09:00",
+      "summary": "セブン‐イレブンは7月21日から、「映画ちいかわ 人魚の島のひみつ」とのコラボフェアを開催。作中に登場する食べ物をイメージしたコラボ商品全10品を発売します。"
+    },
+    {
+      "source": "ASCII.jp AI",
+      "lang": "ja",
+      "title": "『ぼくとドラゴン』×『サンリオキャラクターズ』第三弾コラボレーションキャンペーンを7月18日(土)より実施！",
+      "url": "https://ascii.jp/elem/000/004/420/4420703/?rss",
+      "published": "2026-07-18T16:00:00+09:00",
+      "summary": "『ぼくとドラゴン』×『サンリオキャラクターズ』第三弾コラボレーションキャンペーンを7月18日(土)より実施！"
+    },
+    {
+      "source": "ASCII.jp AI",
+      "lang": "ja",
+      "title": "てんや夏限定「うなとろ天丼」今年は1290円、お手頃価格に",
+      "url": "https://ascii.jp/elem/000/004/420/4420314/?rss",
+      "published": "2026-07-18T15:00:00+09:00",
+      "summary": "てんやは、「うなとろ天丼」を7月23日から数量限定で販売します。"
+    },
+    {
+      "source": "ASCII.jp AI",
+      "lang": "ja",
+      "title": "ファミマ限定「プラレールくじ」数量限定で登場！ ラスト賞はクリア仕様",
+      "url": "https://ascii.jp/elem/000/004/420/4420622/?rss",
+      "published": "2026-07-18T14:30:00+09:00",
+      "summary": "ファミリーマートは7月25日10時から「プラレールくじ-FamilyMart-」を数量限定発売します。価格は1回825円です。"
+    },
+    {
+      "source": "ASCII.jp AI",
+      "lang": "ja",
+      "title": "【イベントレポート】Xiaomi Store 東海エリア初上陸！2026年7月18日（土）イオンモール Nagoya Noritake Gardenにてグランドオープン",
+      "url": "https://ascii.jp/elem/000/004/420/4420700/?rss",
+      "published": "2026-07-18T14:00:22+09:00",
+      "summary": "【イベントレポート】Xiaomi Store 東海エリア初上陸！2026年7月18日（土）イオンモール Nagoya Noritake Gardenにてグランドオープン"
+    },
+    {
+      "source": "TechCrunch AI",
+      "lang": "en",
+      "title": "Neil Rimer thinks the AI money is coming back out",
+      "url": "https://techcrunch.com/2026/07/17/neil-rimer-thinks-the-ai-money-is-coming-back-out/",
+      "published": "2026-07-18T13:47:25+09:00",
+      "summary": "Neil Rimer, the venture capitalist who co-founded Index Ventures, predicts the historic wealth AI is generating in Silicon Valley will have to be redistributed, voluntarily or involuntarily."
+    },
+    {
+      "source": "TechCrunch AI",
+      "lang": "en",
+      "title": "Vertu wants executives to pay $6,880 for an AI agent — here’s how it actually performs",
+      "url": "https://techcrunch.com/2026/07/17/vertu-wants-executives-to-pay-6880-for-an-ai-agent-heres-how-it-actually-performs/",
+      "published": "2026-07-18T07:55:09+09:00",
+      "summary": "From AI workflows to battery life and security, here's what it's really like to live with Vertu's luxury foldable every day."
+    },
+    {
+      "source": "TechCrunch AI",
+      "lang": "en",
+      "title": "Databricks hits $188B valuation, extending its run as AI’s favorite second act",
+      "url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/",
+      "published": "2026-07-18T07:12:56+09:00",
+      "summary": "Databricks has remade its image into an AI company and has published research on the cost savings of open weight AI models for coding."
+    },
+    {
+      "source": "TechCrunch AI",
+      "lang": "en",
+      "title": "The Zoom hack that says, ‘Don’t record me’",
+      "url": "https://techcrunch.com/2026/07/17/the-zoom-hack-that-says-dont-record-me/",
+      "published": "2026-07-18T06:20:47+09:00",
+      "summary": "If every meeting, watercooler conversation, and date gets transcribed and summarized, who's actually reading any of it?"
+    },
+    {
+      "source": "TechCrunch AI",
+      "lang": "en",
+      "title": "Agility Robotics plants its flag in Tesla’s backyard",
+      "url": "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard/",
+      "published": "2026-07-18T05:19:49+09:00",
+      "summary": "Agility is opening a new training center for its Digit robots in Fremont, California."
+    },
+    {
+      "source": "TechCrunch AI",
+      "lang": "en",
+      "title": "AI-driven memory crunch jolts India’s smartphone market",
+      "url": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market/",
+      "published": "2026-07-18T05:09:27+09:00",
+      "summary": "India's smartphone slowdown highlights how the AI boom is reshaping consumer electronics, from pricing and demand to corporate strategy."
+    },
+    {
+      "source": "TechCrunch AI",
+      "lang": "en",
+      "title": "How Apple’s big lawsuit could disrupt OpenAI’s IPO plans",
+      "url": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/",
+      "published": "2026-07-18T02:45:46+09:00",
+      "summary": "Apple&#160;filed a trade secrets&#160;lawsuit against OpenAI&#160;last Friday, and&#160;it&#8217;s&#160;not messing around. The complaint alleges a pattern of misconduct reaching all the way up to Ope"
+    },
+    {
+      "source": "TechCrunch AI",
+      "lang": "en",
+      "title": "Patreon stops asking AI bots not to scrape — and starts blocking them",
+      "url": "https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them/",
+      "published": "2026-07-18T00:21:17+09:00",
+      "summary": "Patreon is strengthening its defenses against AI scraping by working with Cloudflare to block bots that train AI models on creators’ content without permission. The move marks a shift away from relyin"
+    },
+    {
+      "source": "VentureBeat AI",
+      "lang": "en",
+      "title": "The AI compute gap: Enterprises are buying infrastructure faster than they can measure what it costs",
+      "url": "https://venturebeat.com/ai/the-ai-compute-gap-enterprises-are-buying-infrastructure-faster-than-they-can-measure-what-it-costs",
+      "published": "2026-07-17T04:16:48+09:00",
+      "summary": "Across 107 enterprises, AI infrastructure spending is accelerating well ahead of the ability to see or steer its economics. Most organizations run their AI on a familiar base of hyperscalers and model"
+    },
+    {
+      "source": "VentureBeat AI",
+      "lang": "en",
+      "title": "The agent security gap: 54% of enterprises have already had an AI agent incident, and most still let agents share credentials",
+      "url": "https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials",
+      "published": "2026-07-17T04:02:38+09:00",
+      "summary": "Across 107 enterprises, AI agents are being given real access to systems and data while the controls meant to contain them lag behind. More than half have already had a confirmed agent security incide"
+    },
+    {
+      "source": "VentureBeat AI",
+      "lang": "en",
+      "title": "The AI context gap: Enterprise AI organizations have a trust problem, not a retrieval problem — and most are still building the fix",
+      "url": "https://venturebeat.com/ai/the-ai-context-gap-enterprise-ai-organizations-have-a-trust-problem-not-a-retrieval-problem-and-most-are-still-building-the-fix",
+      "published": "2026-07-17T02:06:08+09:00",
+      "summary": "Across 101 enterprises, the infrastructure that feeds AI agents their business context is being built faster than it can be trusted. Retrieval-augmented generation is already the default context sourc"
+    },
+    {
+      "source": "VentureBeat AI",
+      "lang": "en",
+      "title": "The agent evaluation gap: Enterprise AI organizations have a reality-alignment problem, not a coverage problem — and most are shipping to production anyway",
+      "url": "https://venturebeat.com/ai/the-agent-evaluation-gap-enterprise-ai-organizations-have-a-reality-alignment-problem-not-a-coverage-problem-and-most-are-shipping-to-production-anyway",
+      "published": "2026-07-17T01:40:48+09:00",
+      "summary": "Across 157 enterprises, organizations are granting AI agents more autonomy while trusting the evaluations meant to gate that autonomy less. Half have already shipped an agent that passed their interna"
+    },
+    {
+      "source": "VentureBeat AI",
+      "lang": "en",
+      "title": "Agentic orchestration: Enterprise AI organizations have a deployment problem, not a platform problem — and most are calling chatbots agents",
+      "url": "https://venturebeat.com/ai/agentic-orchestration-enterprise-ai-organizations-have-a-deployment-problem-not-a-platform-problem-and-most-are-calling-chatbots-agents",
+      "published": "2026-07-16T07:24:17+09:00",
+      "summary": "Across 101 enterprises, agent orchestration is consolidating onto model-provider platforms — Anthropic’s Claude leads by a wide margin — chosen for the gravity of the underlying model and judged on re"
+    },
+    {
+      "source": "VentureBeat AI",
+      "lang": "en",
+      "title": "Google just redesigned the search box for the first time in 25 years — here’s why it matters more than you think.",
+      "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+      "published": "2026-05-20T02:45:00+09:00",
+      "summary": "For a quarter century, the Google search box has been one of the most recognizable interfaces in computing: a thin white rectangle, a blinking cursor, a few typed words, and a list of blue links. On T"
+    },
+    {
+      "source": "VentureBeat AI",
+      "lang": "en",
+      "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+      "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+      "published": "2026-01-22T23:00:00+09:00",
+      "summary": "Railway, a San Francisco-based cloud platform that has quietly amassed two million developers without spending a dollar on marketing, announced Thursday that it raised $100 million in a Series B fundi"
+    }
+  ]
+}
