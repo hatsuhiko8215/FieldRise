@@ -1,8 +1,16 @@
 {
-  "collected_at": "2026-07-19T06:38:55.723890+09:00",
+  "collected_at": "2026-07-19T09:57:39.563947+09:00",
   "total_items": 31,
   "errors": [],
   "items": [
+    {
+      "source": "ITmedia AI+",
+      "lang": "ja",
+      "title": "「スマホで動く」270億パラメーターLLM「Bonsai 27B」登場",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2607/17/2000000202/",
+      "published": "2026-07-19T08:40:43+09:00",
+      "summary": "27BクラスのモデルをiPhoneで実行可能な容量に収めたとしている。"
+    },
     {
       "source": "ITmedia AI+",
       "lang": "ja",
@@ -18,14 +26,6 @@
       "url": "https://atmarkit.itmedia.co.jp/ait/articles/2607/17/news053.html",
       "published": "2026-07-17T13:00:00+09:00",
       "summary": "Gartnerは、2027年までに企業の40％が自律型AIエージェントを格下げまたは廃止すると予測している。そうした悲観的な見方の背景にはどのような問題があるのか。"
-    },
-    {
-      "source": "ITmedia AI+",
-      "lang": "ja",
-      "title": "「スマホで動く」270億パラメーターLLM「Bonsai 27B」登場",
-      "url": "https://www.itmedia.co.jp/aiplus/article/2607/17/2000000202/",
-      "published": "2026-07-17T10:59:41+09:00",
-      "summary": "27BクラスのモデルをiPhoneで実行可能な容量に収めたとしている。"
     },
     {
       "source": "ITmedia AI+",
@@ -70,6 +70,38 @@
     {
       "source": "ASCII.jp AI",
       "lang": "ja",
+      "title": "「クロスの定義とは？」 AIに“サッカー言語”を教えることから始まった、FIFAとLenovoの協業",
+      "url": "https://ascii.jp/elem/000/004/420/4420702/?rss",
+      "published": "2026-07-19T09:00:00+09:00",
+      "summary": "Lenovoは、初の「FIFA公式テクノロジーパートナー」として、国際大会の運営効率化、試合中の判定や分析の高度化、ファン体験の改善など、多面的にテクノロジー支援を行っている。スポーツの国際統括団体とテクノロジー企業という、まったく異なる分野どうしでの連携を成功させるために、両者はどのような姿勢で挑んできたのか。そのプロセスは、スポーツ分野に限らず、異業種間での協業にも参考になる部分がありそうだ。"
+    },
+    {
+      "source": "ASCII.jp AI",
+      "lang": "ja",
+      "title": "在庫限りの特価で発売中！魔法のようなギミックを持つゲーミングPCがすごい！：マウスコンピューター G-Tune : Garage 大阪店",
+      "url": "https://ascii.jp/elem/000/004/420/4420657/?rss",
+      "published": "2026-07-19T09:00:00+09:00",
+      "summary": "ボタン1つでガラスパネルの透明度を切り替えられるだと？ 魔法のようなギミック「クリアシフトシステム」を搭載したゲーミングPC「NEXTGEAR EG-A7G6T/EX」が店頭在庫限りの数量限定で販売中。"
+    },
+    {
+      "source": "ASCII.jp AI",
+      "lang": "ja",
+      "title": "298円のひんやりご褒美！ファミマ「冷やしくりーむパン」はじゅわっとメロン",
+      "url": "https://ascii.jp/elem/000/004/419/4419459/?rss",
+      "published": "2026-07-19T09:00:00+09:00",
+      "summary": "八天堂は「八天堂 冷やして食べる とろけるくりーむパン 茨城県産赤肉メロン」（298円）を7月14日より全国のファミリーマートで販売中です。"
+    },
+    {
+      "source": "ASCII.jp AI",
+      "lang": "ja",
+      "title": "6,222円なら試したい！ コンバースの隠れた定番「SKIDGRIP」がセール中",
+      "url": "https://ascii.jp/elem/000/004/420/4420708/?rss",
+      "published": "2026-07-19T08:00:00+09:00",
+      "summary": "コンバースのローテクスニーカー「SKIDGRIP」が、Amazonで参考価格8,800円から29％オフの6,222円で販売中です。定番モデルとはひと味違う、クラシックで落ち着いたデザインが魅力です。"
+    },
+    {
+      "source": "ASCII.jp AI",
+      "lang": "ja",
       "title": "ゲーミングPCを安く買うチャンス！ パソコンショップSEVENが24時間限定セールを実施",
       "url": "https://ascii.jp/elem/000/004/420/4420384/?rss",
       "published": "2026-07-19T00:00:00+09:00",
@@ -98,38 +130,6 @@
       "url": "https://ascii.jp/elem/000/004/420/4420707/?rss",
       "published": "2026-07-18T22:30:00+09:00",
       "summary": "約166gの軽量ボディに5,000mAhバッテリーを搭載した「AQUOS sense9 128GB [ブルー]」が、Amazonで47,790円で販売中です。5,030万画素デュアルカメラやPro IGZO OLED、防水・防塵性能も備えています。"
-    },
-    {
-      "source": "ASCII.jp AI",
-      "lang": "ja",
-      "title": "1万3240円から！雨対策にも役立つメレルのGORE-TEXシューズがAmazonにて",
-      "url": "https://ascii.jp/elem/000/004/420/4420706/?rss",
-      "published": "2026-07-18T22:00:00+09:00",
-      "summary": "メレルのGORE-TEX搭載シューズ「CHAMELEON STORM REDUX JAPAN GORE-TEX」がAmazonでセール中です。参考価格24,200円のところ、対象カラー・サイズは45％オフの13,240円で販売されています。"
-    },
-    {
-      "source": "ASCII.jp AI",
-      "lang": "ja",
-      "title": "「穴が空くほど見てほしい」STU48復帰の甲斐心愛が2nd写真集を発売、キラ―カットも！",
-      "url": "https://ascii.jp/elem/000/004/419/4419995/?rss",
-      "published": "2026-07-18T19:00:00+09:00",
-      "summary": "STU48の1期生としてデビューを飾り、2024年6月からマレーシアのKLP48に移籍。今春からSTU48に復帰した甲斐心愛さんが、2nd写真集「おかえり太陽」の発売イベントを7月4日、秋葉原の書泉ブックタワーで開催した。"
-    },
-    {
-      "source": "ASCII.jp AI",
-      "lang": "ja",
-      "title": "海でも使える撮影ドローン！ 勝手に付いてくるモードがスゴイぞ",
-      "url": "https://ascii.jp/elem/000/004/420/4420115/?rss",
-      "published": "2026-07-18T18:00:00+09:00",
-      "summary": "100％防水の空飛ぶカメラ「HOVERAir AQUA」を実際に海へ持ち出して使い倒してきました！プロ並みの映像が撮れる自動追尾など、この夏に遊びたい最新ガジェットの魅力をレビューします。"
-    },
-    {
-      "source": "ASCII.jp AI",
-      "lang": "ja",
-      "title": "肉×ガーリックのやばみ！「ペッパーガーリックステーキワッパー」夏休みにガツンと食べたい",
-      "url": "https://ascii.jp/elem/000/004/420/4420291/?rss",
-      "published": "2026-07-18T17:00:00+09:00",
-      "summary": "バーガーキングは7月17日から、「ステーキワッパー」の新作「ペッパーガーリックステーキワッパー」を期間限定で発売中です。"
     },
     {
       "source": "TechCrunch AI",

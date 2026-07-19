@@ -1,6 +1,6 @@
 # FieldRise デイリーブリーフィング 2026-07-19（日）
 
-**作成**: FieldRise AI秘書（自動生成） | **生成時刻**: 06:38 JST
+**作成**: FieldRise AI秘書（自動生成） | **生成時刻**: 09:57 JST
 
 ---
 
@@ -10,11 +10,11 @@
 
 | 日付 | 天気 | 最高/最低気温 | 降水量 | 降水確率 | 最大風速 |
 |---|---|---|---|---|---|
-| 2026-07-19（日） | 霧雨 | 32.8°C / 26.1°C | 0.6mm | 89% | 9.7km/h |
-| 2026-07-20（月） | 晴れ | 32.9°C / 25.6°C | 0.0mm | 12% | 8.0km/h |
-| 2026-07-21（火） | 晴れ | 32.2°C / 25.9°C | 0.0mm | 20% | 8.7km/h |
-| 2026-07-22（水） | 一部曇り | 34.2°C / 25.6°C | 0.0mm | 4% | 9.4km/h |
-| 2026-07-23（木） | 晴れ | 33.7°C / 26.5°C | 0.0mm | 0% | 12.7km/h |
+| 2026-07-19（日） | 雨（弱） | 32.7°C / 26.3°C | 2.2mm | 93% | 8.4km/h |
+| 2026-07-20（月） | 晴れ | 33.3°C / 25.5°C | 0.0mm | 8% | 7.2km/h |
+| 2026-07-21（火） | 晴れ | 32.2°C / 25.9°C | 0.0mm | 6% | 8.7km/h |
+| 2026-07-22（水） | 霧雨（弱） | 33.7°C / 25.7°C | 0.4mm | 8% | 11.9km/h |
+| 2026-07-23（木） | 晴れ | 33.9°C / 25.7°C | 0.0mm | 6% | 13.2km/h |
 
 **【農業アラート】**
 - 降水確率70%以上。屋外作業の予定調整をおすすめします。
@@ -26,9 +26,9 @@
 
 **国内AIニュース**
 
+- [「スマホで動く」270億パラメーターLLM「Bonsai 27B」登場](https://www.itmedia.co.jp/aiplus/article/2607/17/2000000202/) — ITmedia AI+
 - [「Claude Fable 5」サブスクに統合 Max・Team Premiumプラン対象](https://www.itmedia.co.jp/news/articles/2607/18/news019.html) — ITmedia AI+
 - [「AIエージェントの約半数が"戦力外"になる」 なぜ企業は使いこなせない？](https://atmarkit.itmedia.co.jp/ait/articles/2607/17/news053.html) — ITmedia AI+
-- [「スマホで動く」270億パラメーターLLM「Bonsai 27B」登場](https://www.itmedia.co.jp/aiplus/article/2607/17/2000000202/) — ITmedia AI+
 - [Google、「NotebookLM」を「Gemini Notebook」に改称 Geminiエコシステムへの統合を強化](https://www.itmedia.co.jp/news/articles/2607/17/news062.html) — ITmedia AI+
 - [これからのロボットは「買ったときが一番性能低い」？ ソフトバンクと安川電機「フィジカルAI」学習工程の効率化を実証](https://www.itmedia.co.jp/aiplus/article/2607/17/2000000196/) — ITmedia AI+
 - [強気値上げで自爆か ClaudeやGeminiに押され「M365 Copilot」は一人負け？：888th Lap](https://kn.itmedia.co.jp/kn/articles/2607/17/news040.html) — ITmedia AI+
