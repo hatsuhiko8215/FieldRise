@@ -90,7 +90,7 @@ def main() -> None:
 
     md = f"""# FieldRise デイリーブリーフィング {date_str}（{wd}）
 
-**作成**: FieldRise AI秘書（自動生成） | **生成時刻**: {now.strftime('%H:%M')} JST
+**作成**: FieldRise 秘書の桃花（自動生成） | **生成時刻**: {now.strftime('%H:%M')} JST
 
 ---
 

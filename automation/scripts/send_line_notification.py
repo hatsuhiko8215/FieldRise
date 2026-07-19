@@ -44,7 +44,7 @@ def extract_summary(md_text: str) -> str:
 
     parts: list[str] = []
     today = datetime.now(JST).strftime("%Y年%m月%d日")
-    parts.append(f"おはようございます、社長。\nFieldRise AI秘書です。{today}の日報をお届けします。")
+    parts.append(f"おはようございます、社長。\nFieldRise 秘書の桃花です。{today}の日報をお届けします。")
 
     # 天気セクション
     weather_key = next((k for k in sections if "天気" in k or "気象" in k), None)
