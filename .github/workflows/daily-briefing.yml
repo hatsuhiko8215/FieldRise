@@ -48,3 +48,9 @@ jobs:
             git commit -m "AI秘書: デイリーブリーフィング $(TZ=Asia/Tokyo date +%Y-%m-%d)"
             git push
           fi
+
+      - name: LINEへ日報を通知
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+        run: python3 automation/scripts/send_line_notification.py
+        continue-on-error: true
