@@ -1,6 +1,6 @@
 # FieldRise デイリーブリーフィング 2026-07-20（月）
 
-**作成**: FieldRise 秘書の桃花（自動生成） | **生成時刻**: 07:53 JST
+**作成**: FieldRise 秘書の桃花（自動生成） | **生成時刻**: 19:34 JST
 
 ---
 
@@ -10,11 +10,11 @@
 
 | 日付 | 天気 | 最高/最低気温 | 降水量 | 降水確率 | 最大風速 |
 |---|---|---|---|---|---|
-| 2026-07-20（月） | 晴れ | 32.9°C / 25.7°C | 0.0mm | 4% | 6.8km/h |
-| 2026-07-21（火） | 霧雨（弱） | 33.1°C / 25.9°C | 0.1mm | 6% | 6.7km/h |
-| 2026-07-22（水） | 晴れ | 33.8°C / 25.9°C | 0.0mm | 12% | 7.6km/h |
-| 2026-07-23（木） | 晴れ | 33.8°C / 26.4°C | 0.0mm | 4% | 11.0km/h |
-| 2026-07-24（金） | 快晴 | 34.2°C / 26.6°C | 0.0mm | 4% | 11.7km/h |
+| 2026-07-20（月） | 晴れ | 33.3°C / 25.6°C | 0.0mm | 6% | 7.7km/h |
+| 2026-07-21（火） | 晴れ | 33.5°C / 26.2°C | 0.0mm | 2% | 6.3km/h |
+| 2026-07-22（水） | 晴れ | 34.2°C / 26.1°C | 0.0mm | 16% | 7.8km/h |
+| 2026-07-23（木） | 晴れ | 34.1°C / 25.9°C | 0.0mm | 4% | 10.3km/h |
+| 2026-07-24（金） | 晴れ | 34.0°C / 26.8°C | 0.0mm | 4% | 11.0km/h |
 
 
 ---
@@ -23,12 +23,12 @@
 
 **国内AIニュース**
 
+- [Hugging FaceにAI主導のサイバー攻撃 防御もAIで対抗するも、商用モデルは解析拒否で「GLM」採用](https://www.itmedia.co.jp/news/articles/2607/20/news010.html) — ITmedia AI+
 - [「スマホで動く」270億パラメーターLLM「Bonsai 27B」登場](https://www.itmedia.co.jp/aiplus/article/2607/17/2000000202/) — ITmedia AI+
 - [「Claude Fable 5」サブスクに統合 Max・Team Premiumプラン対象](https://www.itmedia.co.jp/news/articles/2607/18/news019.html) — ITmedia AI+
 - [「AIエージェントの約半数が"戦力外"になる」 なぜ企業は使いこなせない？](https://atmarkit.itmedia.co.jp/ait/articles/2607/17/news053.html) — ITmedia AI+
 - [Google、「NotebookLM」を「Gemini Notebook」に改称 Geminiエコシステムへの統合を強化](https://www.itmedia.co.jp/news/articles/2607/17/news062.html) — ITmedia AI+
 - [これからのロボットは「買ったときが一番性能低い」？ ソフトバンクと安川電機「フィジカルAI」学習工程の効率化を実証](https://www.itmedia.co.jp/aiplus/article/2607/17/2000000196/) — ITmedia AI+
-- [強気値上げで自爆か ClaudeやGeminiに押され「M365 Copilot」は一人負け？：888th Lap](https://kn.itmedia.co.jp/kn/articles/2607/17/news040.html) — ITmedia AI+
 
 **海外AIニュース**
 
