@@ -34,6 +34,14 @@ jobs:
         run: python3 automation/scripts/collect_ai_news.py
         continue-on-error: true
 
+      - name: Cafeブランドデータを収集
+        run: python3 automation/scripts/collect_cafe_data.py
+        continue-on-error: true
+
+      - name: Cafeブランドレポートを生成
+        run: python3 automation/scripts/generate_cafe_report.py
+        continue-on-error: true
+
       - name: 日報を生成
         run: python3 automation/scripts/generate_briefing.py
 
@@ -41,7 +49,7 @@ jobs:
         run: |
           git config user.name "FieldRise-AI-Secretary"
           git config user.email "ai-secretary@fieldrise.local"
-          git add projects/project-001-ai-secretary/
+          git add projects/project-001-ai-secretary/ data/
           if git diff --cached --quiet; then
             echo "変更なし。コミットをスキップします。"
           else

@@ -81,6 +81,13 @@ def extract_summary(md_text: str) -> str:
             parts.append("■ AIニュース（主要5件）\n" + "\n".join(items))
 
     parts.append(f"詳細はこちら:\n{BRIEFING_URL}")
+    # Cafe Brand Report (Ver.2)
+    cafe_report_path = os.path.join(REPO_ROOT, "data", "latest_report.txt")
+    if os.path.exists(cafe_report_path):
+        with open(cafe_report_path, encoding="utf-8") as f:
+            cafe_report = f.read()
+        parts.append(cafe_report)
+
     text = "\n\n".join(parts)
     return text[:MAX_LEN]
 
