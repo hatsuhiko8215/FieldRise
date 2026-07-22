@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FieldRise - AI協働本部</title>
+    <title>FieldRise | AI協働本部</title>
     <style>
+        :root {
+            --primary: #0066ff;
+            --bg: #000000;
+            --text: #ffffff;
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -12,241 +19,197 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
-            color: #333;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
             line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Background Animation */
+        .bg-glow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, #1a1a2e 0%, #000 100%);
+            z-index: -1;
         }
 
         header {
-            background: linear-gradient(135deg, #000 0%, #1a1a2e 100%);
-            color: white;
-            padding: 2rem 1rem;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            border-bottom: 3px solid #0066ff;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            letter-spacing: 2px;
-        }
-
-        header .tagline {
-            font-size: 1.1rem;
-            color: #0066ff;
-            font-weight: 300;
-            margin-bottom: 1rem;
-        }
-
-        nav {
-            background: #1a1a2e;
-            padding: 1rem;
-            text-align: center;
-            border-bottom: 1px solid #0066ff;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1.5rem;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #0066ff;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-
-        section {
-            margin-bottom: 3rem;
-            background: white;
             padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            border-left: 4px solid #0066ff;
+            background: linear-gradient(to bottom, transparent, var(--bg));
         }
 
-        section h2 {
-            font-size: 1.8rem;
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
             margin-bottom: 1rem;
-            color: #000;
+            background: linear-gradient(45deg, #fff, var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .philosophy {
-            background: linear-gradient(135deg, #f9f9f9 0%, #e8f0ff 100%);
-            padding: 2.5rem;
-            border-radius: 8px;
-            text-align: center;
-            border: 2px solid #0066ff;
-        }
-
-        .philosophy h3 {
             font-size: 1.5rem;
-            color: #0066ff;
-            margin-bottom: 1rem;
+            color: var(--primary);
+            margin-bottom: 2rem;
+            font-weight: 300;
+            letter-spacing: 2px;
         }
 
-        .philosophy p {
-            font-size: 1.3rem;
-            font-weight: 500;
-            color: #333;
-            line-height: 1.8;
+        .hero-text {
+            max-width: 800px;
+            font-size: 1.1rem;
+            color: #ccc;
+            margin-bottom: 3rem;
         }
 
-        .business-items {
+        section {
+            padding: 5rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
         }
 
-        .business-item {
-            background: #f9f9f9;
-            padding: 1.5rem;
-            border-radius: 6px;
-            border-left: 4px solid #0066ff;
-            transition: transform 0.3s;
+        .card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, border-color 0.3s ease;
         }
 
-        .business-item:hover {
-            transform: translateY(-5px);
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
         }
 
-        .business-item h4 {
-            color: #0066ff;
-            margin-bottom: 0.5rem;
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
         }
 
         .footer-links {
             text-align: center;
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid #ddd;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.02);
+            margin-top: 5rem;
         }
 
         .footer-links a {
-            color: #0066ff;
+            color: #888;
             text-decoration: none;
             margin: 0 1rem;
+            font-size: 0.9rem;
             transition: color 0.3s;
         }
 
         .footer-links a:hover {
-            color: #004db3;
-            text-decoration: underline;
+            color: var(--primary);
         }
 
-        footer {
-            background: #1a1a2e;
+        .contact-btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--primary);
             color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-            border-top: 3px solid #0066ff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 2rem;
+            transition: opacity 0.3s;
+        }
+
+        .contact-btn:hover {
+            opacity: 0.8;
         }
 
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-
-            nav a {
-                display: block;
-                margin: 0.5rem 0;
-            }
-
-            section {
-                padding: 1.5rem;
-            }
+            .logo { font-size: 2.5rem; }
+            .philosophy { font-size: 1.1rem; }
         }
     </style>
 </head>
 <body>
+    <div class="bg-glow"></div>
+
     <header>
-        <h1>FieldRise</h1>
-        <div class="tagline">AI協働本部</div>
-        <p style="font-size: 0.95rem; color: #ccc;">データで学び、AIで創り、人が価値を決める。</p>
+        <div class="logo">FieldRise</div>
+        <div class="philosophy">「データで学び、AIで創り、人が価値を決める。」</div>
+        <p class="hero-text">
+            人・AI・自然・データが協力し、新しい価値を世界へ届ける。<br>
+            AIは人の能力を最大限に引き出すパートナーであり、最終的な創造と責任は人が担う。<br>
+            私たちはAIと共に成長する未来を創ります。
+        </p>
+        <a href="#about" class="contact-btn">Explore More</a>
     </header>
 
-    <nav>
-        <a href="#philosophy">理念</a>
-        <a href="#business">事業</a>
-        <a href="#contact">お問い合わせ</a>
-        <a href="privacy.html">プライバシーポリシー</a>
-        <a href="terms.html">利用規約</a>
-    </nav>
-
-    <div class="container">
-        <section id="philosophy">
-            <h2>経営理念</h2>
-            <div class="philosophy">
-                <h3>「データで学び、AIで創り、人が価値を決める。」</h3>
-                <p>FieldRiseは、人・AI・自然・データが協力し、新しい価値を世界へ届ける会社です。</p>
-                <p style="margin-top: 1rem; font-size: 1rem; font-weight: 300;">
-                    AIは単なる道具ではなく、人の能力を最大限に引き出すパートナーとして活用します。<br>
-                    最終的な創造・判断・責任は人が担い、AIと共に成長する企業を目指します。
-                </p>
+    <section id="about">
+        <center><h2>事業内容</h2></center>
+        <div class="grid">
+            <div class="card">
+                <h3>AI音楽制作</h3>
+                <p>「Cafeシリーズ」をはじめとする、世界中の人々の日常に溶け込むグローバルなBGMブランドを展開。AIと感性を融合させた新しい音楽体験を創造します。</p>
             </div>
-        </section>
-
-        <section id="business">
-            <h2>事業領域</h2>
-            <p>FieldRiseは以下の分野で価値を創造し、持続可能な事業へ成長させています。</p>
-            <div class="business-items">
-                <div class="business-item">
-                    <h4>🎵 AI音楽制作</h4>
-                    <p>最先端のAI技術を活用した楽曲制作と配信。</p>
-                </div>
-                <div class="business-item">
-                    <h4>🎬 動画制作</h4>
-                    <p>コンテンツ制作から配信まで、トータルサポート。</p>
-                </div>
-                <div class="business-item">
-                    <h4>📱 SNSコンテンツ運営</h4>
-                    <p>TikTok、YouTube、Instagramなど複数プラットフォーム対応。</p>
-                </div>
-                <div class="business-item">
-                    <h4>⚙️ AIシステム開発</h4>
-                    <p>企業向けAI導入・自動化ソリューション。</p>
-                </div>
-                <div class="business-item">
-                    <h4>🌾 農産物生産・販売</h4>
-                    <p>データ駆動型の農業経営とお米の販売。</p>
-                </div>
-                <div class="business-item">
-                    <h4>🔬 AI研究開発</h4>
-                    <p>次世代AI技術の研究と実装。</p>
-                </div>
+            <div class="card">
+                <h3>農業・データサイエンス</h3>
+                <p>香川県まんのう町での米生産とAI・データを融合。伝統的な農業を持続可能で進化し続ける事業へと成長させます。</p>
             </div>
-        </section>
-
-        <section id="contact">
-            <h2>お問い合わせ</h2>
-            <p>FieldRiseへのご質問やご提案は、以下よりお気軽にお問い合わせください。</p>
-            <p style="margin-top: 1rem;">
-                <strong>Email:</strong> contact@fieldrise.local<br>
-                <strong>Web:</strong> https://github.com/hatsuhiko8215/FieldRise
-            </p>
-        </section>
-
-        <div class="footer-links">
-            <a href="privacy.html">プライバシーポリシー</a>
-            <a href="terms.html">利用規約</a>
+            <div class="card">
+                <h3>SNS・コンテンツ運営</h3>
+                <p>TikTok、YouTube、Instagram等のプラットフォームを活用し、ブランド価値を最大化するコンテンツ戦略をAIと共に実行します。</p>
+            </div>
+            <div class="card">
+                <h3>AI研究開発</h3>
+                <p>実務に即したAIシステム開発と研究を行い、業務効率化と新しい収益モデルの構築を推進します。</p>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 FieldRise. All rights reserved.</p>
-        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #999;">
-            Powered by AI Collaboration Platform
-        </p>
-    </footer>
+    <section>
+        <center><h2>AI協働本部</h2></center>
+        <div class="card" style="max-width: 800px; margin: 0 auto;">
+            <p style="text-align: center; margin-bottom: 2rem;">
+                FieldRiseは「AIを使う会社」ではなく「AIと共に成長する会社」です。<br>
+                社長、COO（Manus）、CTO（ChatGPT）、Automation担当（GitHub）が<br>
+                一つのチームとして機能し、世界市場へ挑みます。
+            </p>
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1rem; text-align: center;">
+                <div><strong>桃花 (COO)</strong><br><small>実務・分析</small></div>
+                <div><strong>CTO (ChatGPT)</strong><br><small>戦略・設計</small></div>
+                <div><strong>Automation</strong><br><small>自動化・実行</small></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <p style="margin-top: 2rem; color: #555; font-size: 0.8rem;">&copy; 2026 FieldRise. AI創業記念日: 2026年7月18日</p>
+    </div>
 </body>
 </html>
