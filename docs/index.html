@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FieldRise - AI協働本部</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #000 0%, #1a1a2e 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 3px solid #0066ff;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        header .tagline {
+            font-size: 1.1rem;
+            color: #0066ff;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            background: #1a1a2e;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid #0066ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0066ff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #0066ff;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        .philosophy {
+            background: linear-gradient(135deg, #f9f9f9 0%, #e8f0ff 100%);
+            padding: 2.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #0066ff;
+        }
+
+        .philosophy h3 {
+            font-size: 1.5rem;
+            color: #0066ff;
+            margin-bottom: 1rem;
+        }
+
+        .philosophy p {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .business-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .business-item {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid #0066ff;
+            transition: transform 0.3s;
+        }
+
+        .business-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .business-item h4 {
+            color: #0066ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer-links a {
+            color: #0066ff;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #004db3;
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 3px solid #0066ff;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FieldRise</h1>
+        <div class="tagline">AI協働本部</div>
+        <p style="font-size: 0.95rem; color: #ccc;">データで学び、AIで創り、人が価値を決める。</p>
+    </header>
+
+    <nav>
+        <a href="#philosophy">理念</a>
+        <a href="#business">事業</a>
+        <a href="#contact">お問い合わせ</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="terms.html">利用規約</a>
+    </nav>
+
+    <div class="container">
+        <section id="philosophy">
+            <h2>経営理念</h2>
+            <div class="philosophy">
+                <h3>「データで学び、AIで創り、人が価値を決める。」</h3>
+                <p>FieldRiseは、人・AI・自然・データが協力し、新しい価値を世界へ届ける会社です。</p>
+                <p style="margin-top: 1rem; font-size: 1rem; font-weight: 300;">
+                    AIは単なる道具ではなく、人の能力を最大限に引き出すパートナーとして活用します。<br>
+                    最終的な創造・判断・責任は人が担い、AIと共に成長する企業を目指します。
+                </p>
+            </div>
+        </section>
+
+        <section id="business">
+            <h2>事業領域</h2>
+            <p>FieldRiseは以下の分野で価値を創造し、持続可能な事業へ成長させています。</p>
+            <div class="business-items">
+                <div class="business-item">
+                    <h4>🎵 AI音楽制作</h4>
+                    <p>最先端のAI技術を活用した楽曲制作と配信。</p>
+                </div>
+                <div class="business-item">
+                    <h4>🎬 動画制作</h4>
+                    <p>コンテンツ制作から配信まで、トータルサポート。</p>
+                </div>
+                <div class="business-item">
+                    <h4>📱 SNSコンテンツ運営</h4>
+                    <p>TikTok、YouTube、Instagramなど複数プラットフォーム対応。</p>
+                </div>
+                <div class="business-item">
+                    <h4>⚙️ AIシステム開発</h4>
+                    <p>企業向けAI導入・自動化ソリューション。</p>
+                </div>
+                <div class="business-item">
+                    <h4>🌾 農産物生産・販売</h4>
+                    <p>データ駆動型の農業経営とお米の販売。</p>
+                </div>
+                <div class="business-item">
+                    <h4>🔬 AI研究開発</h4>
+                    <p>次世代AI技術の研究と実装。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>お問い合わせ</h2>
+            <p>FieldRiseへのご質問やご提案は、以下よりお気軽にお問い合わせください。</p>
+            <p style="margin-top: 1rem;">
+                <strong>Email:</strong> contact@fieldrise.local<br>
+                <strong>Web:</strong> https://github.com/hatsuhiko8215/FieldRise
+            </p>
+        </section>
+
+        <div class="footer-links">
+            <a href="privacy.html">プライバシーポリシー</a>
+            <a href="terms.html">利用規約</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 FieldRise. All rights reserved.</p>
+        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #999;">
+            Powered by AI Collaboration Platform
+        </p>
+    </footer>
+</body>
+</html>
