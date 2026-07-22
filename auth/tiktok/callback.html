@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok認証 - FieldRise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #000 0%, #1a1a2e 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            border: 2px solid #0066ff;
+            max-width: 500px;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #0066ff;
+        }
+
+        .status {
+            font-size: 1.1rem;
+            margin: 1.5rem 0;
+            line-height: 1.6;
+        }
+
+        .spinner {
+            border: 4px solid rgba(0, 102, 255, 0.2);
+            border-top: 4px solid #0066ff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 1.5rem auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .code-display {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1.5rem;
+            font-family: 'Courier New', monospace;
+            word-break: break-all;
+            font-size: 0.9rem;
+        }
+
+        .info {
+            background: rgba(0, 102, 255, 0.1);
+            border-left: 4px solid #0066ff;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        .error {
+            background: rgba(255, 0, 0, 0.1);
+            border-left: 4px solid #ff0000;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            border-radius: 4px;
+            color: #ff6666;
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 TikTok認証</h1>
+        
+        <div id="loading">
+            <div class="spinner"></div>
+            <div class="status">認証情報を処理中です...</div>
+        </div>
+
+        <div id="success" style="display: none;">
+            <div class="status">✅ 認証が完了しました！</div>
+            <div class="info">
+                <strong>認可コード:</strong>
+                <div class="code-display" id="auth-code">---</div>
+            </div>
+            <div class="info">
+                このコードはFieldRiseのバックエンドで処理されます。
+            </div>
+        </div>
+
+        <div id="error" style="display: none;">
+            <div class="error">
+                <strong>⚠️ エラーが発生しました</strong>
+                <div id="error-message" style="margin-top: 0.5rem;"></div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 FieldRise - AI協働本部</p>
+        </footer>
+    </div>
+
+    <script>
+        // Parse URL parameters
+        const params = new URLSearchParams(window.location.search);
+        const code = params.get('code');
+        const error = params.get('error');
+        const errorDescription = params.get('error_description');
+
+        // Simulate processing delay
+        setTimeout(() => {
+            const loadingDiv = document.getElementById('loading');
+            const successDiv = document.getElementById('success');
+            const errorDiv = document.getElementById('error');
+
+            if (error) {
+                // Error case
+                loadingDiv.style.display = 'none';
+                errorDiv.style.display = 'block';
+                document.getElementById('error-message').textContent = 
+                    `${error}: ${errorDescription || '詳細不明'}`;
+            } else if (code) {
+                // Success case
+                loadingDiv.style.display = 'none';
+                successDiv.style.display = 'block';
+                document.getElementById('auth-code').textContent = code;
+
+                // Log to console for debugging
+                console.log('Authorization Code:', code);
+            } else {
+                // No code or error
+                loadingDiv.style.display = 'none';
+                errorDiv.style.display = 'block';
+                document.getElementById('error-message').textContent = 
+                    'URLにコードが含まれていません。TikTok認証をやり直してください。';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
