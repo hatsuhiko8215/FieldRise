@@ -1,0 +1,135 @@
+name: API Health Check
+
+on:
+  schedule:
+    - cron: '0 22 * * *'  # Daily at 22:00 UTC (07:00 JST)
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  api-health-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Check LINE Secret
+        id: check_line
+        run: |
+          if [ -z "${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}" ]; then
+            echo "status=未設定" >> $GITHUB_OUTPUT
+          else
+            echo "status=設定済み" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Check YouTube Secret
+        id: check_youtube
+        run: |
+          if [ -z "${{ secrets.YOUTUBE_API_KEY }}" ]; then
+            echo "status=未設定" >> $GITHUB_OUTPUT
+          else
+            echo "status=設定済み" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Check Meta Secret
+        id: check_meta
+        run: |
+          if [ -z "${{ secrets.META_ACCESS_TOKEN }}" ]; then
+            echo "status=未設定" >> $GITHUB_OUTPUT
+          else
+            echo "status=設定済み" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Check TikTok Client Key
+        id: check_tiktok_key
+        run: |
+          if [ -z "${{ secrets.TIKTOK_CLIENT_KEY }}" ]; then
+            echo "status=未設定" >> $GITHUB_OUTPUT
+          else
+            echo "status=設定済み" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Check TikTok Client Secret
+        id: check_tiktok_secret
+        run: |
+          if [ -z "${{ secrets.TIKTOK_CLIENT_SECRET }}" ]; then
+            echo "status=未設定" >> $GITHUB_OUTPUT
+          else
+            echo "status=設定済み" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Generate Health Check Report
+        id: report
+        run: |
+          echo "## API Health Check Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**LINE**" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check_line.outputs.status }}" = "設定済み" ]; then
+            echo "✅ OK" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ 未設定" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          echo "**YouTube**" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check_youtube.outputs.status }}" = "設定済み" ]; then
+            echo "✅ OK" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ 未設定" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          echo "**Meta**" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check_meta.outputs.status }}" = "設定済み" ]; then
+            echo "✅ OK" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ 未設定" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          echo "**TikTok Client Key**" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check_tiktok_key.outputs.status }}" = "設定済み" ]; then
+            echo "✅ OK" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ 未設定" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          echo "**TikTok Client Secret**" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check_tiktok_secret.outputs.status }}" = "設定済み" ]; then
+            echo "✅ OK" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ 未設定" >> $GITHUB_STEP_SUMMARY
+          fi
+      
+      - name: Check for Missing Secrets
+        run: |
+          MISSING=""
+          if [ "${{ steps.check_line.outputs.status }}" = "未設定" ]; then
+            MISSING="${MISSING}LINE_CHANNEL_ACCESS_TOKEN "
+          fi
+          if [ "${{ steps.check_youtube.outputs.status }}" = "未設定" ]; then
+            MISSING="${MISSING}YOUTUBE_API_KEY "
+          fi
+          if [ "${{ steps.check_meta.outputs.status }}" = "未設定" ]; then
+            MISSING="${MISSING}META_ACCESS_TOKEN "
+          fi
+          if [ "${{ steps.check_tiktok_key.outputs.status }}" = "未設定" ]; then
+            MISSING="${MISSING}TIKTOK_CLIENT_KEY "
+          fi
+          if [ "${{ steps.check_tiktok_secret.outputs.status }}" = "未設定" ]; then
+            MISSING="${MISSING}TIKTOK_CLIENT_SECRET "
+          fi
+          
+          if [ -n "$MISSING" ]; then
+            echo "⚠️ Missing Secrets: $MISSING"
+            exit 1
+          else
+            echo "✅ All Secrets are configured!"
+            exit 0
+          fi
