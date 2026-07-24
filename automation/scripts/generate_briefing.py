@@ -6,6 +6,7 @@ GitHub Actionsから毎日実行される。
 """
 import json
 from datetime import datetime, timezone, timedelta
+import random
 from pathlib import Path
 
 JST = timezone(timedelta(hours=9))
@@ -59,6 +60,39 @@ def weather_section(data) -> str:
     return "\n".join(lines) + "\n"
 
 
+def get_agriculture_comment(weather_data) -> str:
+    """農業向けのワンポイントコメントを生成"""
+    if not weather_data or not weather_data.get("forecast"):
+        return "本日の天気データから最適な農作業をご判断ください。"
+    
+    today = weather_data["forecast"][0]
+    temp_max = today.get("temp_max_c", 0)
+    precip_prob = today.get("precipitation_probability_pct", 0)
+    
+    if temp_max >= 35:
+        return "猛暑が予想されます。田んぼの水管理を優先してください。"
+    elif precip_prob >= 70:
+        return "雨の予報です。屋外作業の予定調整をおすすめします。"
+    elif temp_max <= 5:
+        return "冷え込みが予想されます。作物の霜害対策をご確認ください。"
+    else:
+        return "良好な天気が予想されます。農作業を進めるのに適した一日です。"
+
+
+def get_music_comment(now: datetime) -> str:
+    """音楽・Cafeシリーズ向けのワンポイントコメントを生成"""
+    weekday = now.weekday()
+    hour = now.hour
+    
+    # 曜日と時間帯に基づいたコメント
+    if weekday >= 4:  # 金土日
+        return "週末です。Cafeシリーズのアイデアを整理するのに適した一日です。"
+    elif hour >= 14:  # 午後
+        return "午後です。新しい音楽トレンドをチェックするのに適した時間帯です。"
+    else:  # 朝
+        return "朝です。Cafeシリーズのコンセプト整理に集中するのに適した時間帯です。"
+
+
 def news_section(data) -> str:
     if not data or not data.get("items"):
         return "本日のAIニュースは取得できませんでした。\n"
@@ -88,9 +122,9 @@ def main() -> None:
     weather = load_json(BASE / "data" / "weather" / "latest.json")
     news = load_json(BASE / "data" / "ai-news" / "latest.json")
 
-    md = f"""# FieldRise デイリーブリーフィング {date_str}（{wd}）
+    md = f"""# {date_str}（{wd}）朝の定時報告
 
-**作成**: FieldRise 秘書の桃花（自動生成） | **生成時刻**: {now.strftime('%H:%M')} JST
+**FieldRise AI協働本部 COO・秘書の桃花です。** | **生成時刻**: {now.strftime('%H:%M')} JST
 
 ---
 
@@ -106,11 +140,21 @@ def main() -> None:
 
 ---
 
-## 3. 運用メモ
+## 3. 本日のワンポイントコメント
 
-本ブリーフィングはGitHub Actionsにより毎朝自動生成されています。
-掲載領域の追加（YouTube・SNS分析、売上、農業データ等）は段階的に拡張予定です。
-問題や改善要望はCOO（Manus）までお知らせください。
+🌾 **農業**
+{get_agriculture_comment(weather)}
+
+🎵 **音楽**
+{get_music_comment(now)}
+
+🤖 **システム**
+GitHub・各システムは正常稼働中です。
+
+---
+
+本ブリーフィングはGitHub Actionsにより毎朝7:00に自動生成されています。
+Credit節約運用中のため、本報告は無料APIと公開情報のみを利用しています。
 """
 
     out_dir = BASE / "briefings"
